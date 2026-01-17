@@ -8,7 +8,7 @@
             <th
                 t-if="(o.move_type == 'out_invoice' or o.move_type == 'out_refund') and any(l.related_so_sequence for l in o.invoice_line_ids)"
             >
-                Line Number
+                #
             </th>
         </xpath>
         <xpath expr="//td[@name='account_invoice_line_name']" position="before">
